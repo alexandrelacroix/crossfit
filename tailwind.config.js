@@ -12,8 +12,34 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                serif: ['New Amsterdam', ...defaultTheme.fontFamily.serif],
             },
+            colors: {
+                'burgundy': {
+                    DEFAULT: '#254D71',
+                    lite: '#4F80AC',
+                    dark: '#051829',
+                },
+                'blue': {
+                    DEFAULT: '#254D71',
+                    lite: '#4F80AC',
+                    dark: '#051829',
+                },
+                'pink': {
+                    DEFAULT: '#254D71',
+                    lite: '#4F80AC',
+                    dark: '#051829',
+                },
+                'creme': {
+                    DEFAULT: '#254D71',
+                    lite: '#4F80AC',
+                    dark: '#051829',
+                },
+            },
+            boxShadow: {
+                'box': '0 0 16px -5px rgba(0, 0, 0, 0.26)',
+            }
         },
     },
 
