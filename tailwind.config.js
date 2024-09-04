@@ -15,26 +15,34 @@ export default {
                 sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
                 serif: ['New Amsterdam', ...defaultTheme.fontFamily.serif],
             },
+            backgroundImage: {
+                'header': "url('/storage/images/header.jpg')",
+            },
             colors: {
                 'burgundy': {
-                    DEFAULT: '#254D71',
-                    lite: '#4F80AC',
-                    dark: '#051829',
+                    DEFAULT: '#5f2e41',
+                    lite: '#fff',
+                    dark: '#fff',
                 },
                 'blue': {
-                    DEFAULT: '#254D71',
-                    lite: '#4F80AC',
-                    dark: '#051829',
+                    DEFAULT: '#73e9d9',
+                    lite: '#fff',
+                    dark: '#fff',
                 },
                 'pink': {
-                    DEFAULT: '#254D71',
-                    lite: '#4F80AC',
-                    dark: '#051829',
+                    DEFAULT: '#f168a2',
+                    lite: '#fff',
+                    dark: '#fff',
+                },
+                'purple': {
+                    DEFAULT: '#703480',
+                    lite: '#fff',
+                    dark: '#fff',
                 },
                 'creme': {
-                    DEFAULT: '#254D71',
-                    lite: '#4F80AC',
-                    dark: '#051829',
+                    DEFAULT: '#f8e5d4',
+                    lite: '#fff',
+                    dark: '#fff',
                 },
             },
             boxShadow: {
