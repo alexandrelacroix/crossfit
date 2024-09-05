@@ -3,10 +3,12 @@
 
     <section class="min-h-screen bg-slate-500 grid content-center py-6 relative">
         <x-app.container class="text-creme">
-            <x-app.h1>Crossfit Heritage<br/>Plus d’excuses !</x-app.h1>
-            <x-app.subtitle>Ta nouvelle salle de crossfit à Wavre.</x-app.subtitle>
-            <x-app.subtitle>Rejoins-nous et transforme chaque défi en victoire.</x-app.subtitle>
-            <span>Déja convaincu ?</span><a href="#">Contacte-nous</a>
+            <div class="relative z-20">
+                <x-app.h1>Crossfit Heritage<br/>Plus d’excuses !</x-app.h1>
+                <x-app.subtitle>Ta nouvelle salle de crossfit à Wavre.</x-app.subtitle>
+                <x-app.subtitle>Rejoins-nous et transforme chaque défi en victoire.</x-app.subtitle>
+                <span>Déja convaincu ?</span><a href="#">Contacte-nous</a>
+            </div>
         </x-app.container>
     </section>
 
