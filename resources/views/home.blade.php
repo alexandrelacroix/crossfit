@@ -1,6 +1,7 @@
 <x-app-layout>
+    <div class="bg_img w-full h-screen" style="background-image:url('{{ Storage::url('images/header.jpg') }}');"></div>
+
     <section class="min-h-screen bg-slate-500 grid content-center py-6 relative">
-        <div class="bg_img w-full h-full" style="background-image:url('{{ Storage::url('images/header.jpg') }}');"></div>
         <x-app.container class="text-creme">
             <x-app.h1>Crossfit Heritage<br/>Plus d’excuses !</x-app.h1>
             <x-app.subtitle>Ta nouvelle salle de crossfit à Wavre.</x-app.subtitle>
