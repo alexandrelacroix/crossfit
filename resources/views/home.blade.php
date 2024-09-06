@@ -39,11 +39,10 @@
                     </div>
                     <div class="col-span-1 pl-10 pr-16 border-l border-creme py-6">
                         <x-app.h2>Pour quoi</x-app.h2>
-                        <x-app.paragraph>Le CrossFit, c’est le choix idéal pour se renforcer, se tonifier et gagner en endurance. </x-app.paragraph> 
-                        <x-app.paragraph>Chaque séance est unique,ce qui évite la routine et maintient ta motivation.</x-app.paragraph>
+                        <x-app.paragraph>Le CrossFit, c’est le choix idéal pour se renforcer, se tonifier et gagner en endurance.</x-app.paragraph> 
+                        <x-app.paragraph>Chaque séance est unique, ce&nbsp;qui évite la routine et maintient ta motivation.</x-app.paragraph>
                         <x-app.paragraph>Rapidement, tu verras des résultats concrets, tant sur le plan physique que mental. </x-app.paragraph>
-                        <x-app.paragraph>Cela te pousse également à sortir de ta zone de confort 
-                        et à révéler la meilleure version de toi-même.</x-app.paragraph>
+                        <x-app.paragraph>Cela te pousse également à sortir de ta zone de confort et à révéler la meilleure version de toi-même.</x-app.paragraph>
                     </div>
                     <div class="col-span-1 pl-10 pr-16 border-l border-creme py-6">
                         <x-app.h2>Comment</x-app.h2>
