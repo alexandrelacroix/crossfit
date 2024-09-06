@@ -38,15 +38,31 @@ body
     background-size: cover
     background-position: center bottom
 
+.purple_bg
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100vw
+    height: auto
+    z-index: 1
+    transform: translate(-50%, -50%)
+    background-size: 100%
+    background-repeat: no-repeat
+    background-position: center
+    @media screen and (max-width: 1080px)
+        width: auto
+        height: 100vh
+
 .shadow_bg
     display: block
     position: absolute
-    top: 0
-    left: 0
+    width: 1600px
+    height: 1600px
+    top: -280px
+    left: -27%
     z-index: 4
-    height: 100vh
-    background-repeat: no-repeat
-    background-position: left center
+    @media screen and (min-width: 1600px)
+        left: calc(50% - 1200px)
 
 .shadow_nav
     display: block
