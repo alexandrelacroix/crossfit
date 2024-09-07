@@ -29,7 +29,7 @@
     </head>
     
     <body class="font-sans antialiased relative">
-        @include('layouts.navigation')
+        @include('layouts.header')
 
         @if (isset($modal))
             {{ $modal }}
@@ -38,5 +38,7 @@
         <main>
             {{ $slot }}
         </main>
+
+        @include('layouts.footer')
     </body>
 </html>

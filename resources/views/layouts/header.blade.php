@@ -1,4 +1,4 @@
-<nav class="absolute t-0 left-0 w-full z-50">
+<header class="absolute t-0 left-0 w-full z-50">
 
     <x-app.container class="nav flex justify-center sm:justify-between items-center pt-4 md:pt-6 lg:pt-10 relative">
         <a href="#" class="flex">
@@ -35,4 +35,5 @@
             </x-dropdown-link>
         </form>
     @endif
-</nav>
+    
+</header>
