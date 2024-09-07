@@ -5,8 +5,8 @@
             <img src="{{ Storage::url('images/logo.svg') }}" alt="" class="w-11 md:w-12 lg:w-16 xl:w-20 mr-0 lg:mr-3">
             <div class="flex sm:hidden md:flex mx-4 md:mx-5 lg:mx-6 items-center">
                 <img src="{{ Storage::url('images/heritage.svg') }}" alt="" class="w-36 lg:w-44">
-                <span class="w-1 h-6 rounded-full bg-pink mx-3 flex-none block md:hidden lg:block"></span>
-                <img src="{{ Storage::url('images/crossfit.svg') }}" alt="" class="w-20 lg:w-24 block md:hidden lg:block">
+                <span class="w-1 h-6 rounded-full bg-pink mx-3 flex-none hidden lg:block"></span>
+                <img src="{{ Storage::url('images/crossfit.svg') }}" alt="" class="w-20 lg:w-24 hidden lg:block">
             </div>
         </a>
 
