@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/photos', function () {
+    return view('gallery');
+});
+
 Route::get('/edit', function () {
     return view('edit');
 })->middleware(['auth', 'verified'])->name('edit');

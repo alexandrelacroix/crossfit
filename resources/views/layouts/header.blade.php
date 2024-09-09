@@ -15,6 +15,7 @@
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Histoire</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Lieu</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Formules</a>
+            <a href="/photos" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Photos</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Contact</a>
         </div>
         
