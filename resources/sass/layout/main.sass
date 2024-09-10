@@ -145,4 +145,20 @@ body
         border-left: 2px dotted $creme
         opacity: .2
         border-top-left-radius: 40px
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='39' ry='39' stroke='$creme' stroke-width='4' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e")
+
+header
+    // transition: all .3s ease
+    &.fixed_activated
+        // position: fixed !important
+
+.fade_out
+    z-index: 9999999
+
+.animate
+    opacity: 1
+    transition: all 1s ease
+    &.active
+        opacity: 0
+        transform: translateX(-50px)
+        &.dd_10
+            transform: translateX(-30px)

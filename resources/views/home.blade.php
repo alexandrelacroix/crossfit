@@ -8,13 +8,13 @@
 
         <x-app.container class="text-creme">
             <div class="relative z-20 drop-shadow-lg mt-10 text-center sm:text-left">
-                <x-app.h1>Crossfit Heritage<br/>Plus d’excuses&nbsp;!</x-app.h1>
-                <x-app.subtitle>Ta nouvelle salle de crossfit à Wavre.</x-app.subtitle>
-                <x-app.subtitle>Rejoins-nous et transforme chaque défi en victoire.</x-app.subtitle>
+                <x-app.h1 class="animate active">Crossfit Heritage<br/>Plus d’excuses&nbsp;!</x-app.h1>
+                <x-app.subtitle class="animate dd_10 active">Ta nouvelle salle de crossfit à Wavre.</x-app.subtitle>
+                <x-app.subtitle class="animate dd_10 active">Rejoins-nous et transforme chaque défi en victoire.</x-app.subtitle>
                 <div class="py-8 flex flex-wrap items-center justify-center sm:justify-start mt-3">
                     <x-app.talk class="mr-4">Déja convaincu ?</x-app.talk>
                     <img src="{{ Storage::url('images/arrow.png') }}" alt="" class="flex-none w-7 mr-4 relative -top-3 hidden sm:block select-none pointer-events-none">
-                    <x-app.cta href="#" class="!mx-0">Contacte-nous</x-app.cta>
+                    <x-app.cta href="#" class="!mx-0 scroller" data-scroll="contact">Contacte-nous</x-app.cta>
                 </div>
             </div>
             <div class="absolute bottom-3 left-0 text-center w-full opacity-80">
@@ -25,7 +25,7 @@
     </section>
 
     <!-- Crossfit -->
-    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
+    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative into_scroll" data-scroll="crossfit" id="crossfit">
         <x-app.container class="text-creme">
             <div class="xl:flex">
                 <div class="title xl:pr-24 py-6 text-center sm:text-left">
@@ -72,7 +72,7 @@
     </section>
 
     <!-- Heritage -->
-    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
+    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative into_scroll" data-scroll="vision" id="vision">
         <x-app.container>
             <div class="title text-center sm:text-left py-6">
                 <x-app.h1 class="text-creme">HERITAGE</x-app.h1>
@@ -111,17 +111,17 @@
     </section>
 
     <!-- LA Box -->
-    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
+    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative into_scroll" data-scroll="lieu" id="lieu">
         <x-app.container>
             <div class="title xl:pr-24 py-6 text-center sm:text-left">
                 <x-app.h1 class="text-creme">La box</x-app.h1>
                 <x-app.subtitle class="text-pink">et son horaire</x-app.subtitle>
             </div>
             <div class="mt-4 lg:mt-10 text-right relative block lg:flex xl:block">
-                <div class="inline-block w-full lg:w-1/2 px-6 py-5 md:px-10 md:py-6 lg:px-14 lg:py-8 bg-creme text-left relative z-20 border_radius_box my-0 xl:my-16">
-                    <x-app.paragraph class="!mt-0">Nous sommes ouverts depuis le 2 septembre 2024.<br/>Qu’attends-tu pour <span class="underline font-bold">passer nous voir</span> ?</x-app.paragraph> 
-                    <x-app.paragraph>La box est située à Wavre, <span class="underline font-bold">Chaussée de Louvain 473, 1300 Wavre</span></x-app.paragraph> 
-                    <x-app.paragraph><span class="underline font-bold">Contacte-nous</span> pour plus d’informations ou viens directement nous rendre visite. Vérifie les horaires pour éviter de tomber en plein cours.</x-app.paragraph> 
+                <div class="inline-block w-full lg:w-1/2 px-6 py-5 md:px-10 md:py-6 lg:px-14 lg:py-8 xl:py-12 bg-creme text-left relative z-20 border_radius_box my-0 xl:my-16">
+                    <x-app.paragraph class="!mt-0">Nous sommes ouverts depuis le 2 septembre 2024.<br/>Qu’attends-tu pour <span class="font-bold">passer nous voir</span> ?</x-app.paragraph> 
+                    <x-app.paragraph>La box est située à Wavre, <span class="font-bold">Chaussée de Louvain 473, 1300 Wavre</span></x-app.paragraph> 
+                    <x-app.paragraph><span class="font-bold">Contacte-nous</span> pour plus d’informations ou viens directement nous rendre visite. Vérifie les horaires pour éviter de tomber en plein cours.</x-app.paragraph> 
                     <x-app.cta href="#" class="!mx-0 mt-3">Consulter l'horaire</x-app.cta>
                 </div>
                 <img src="{{ Storage::url('images/salle.jpg') }}" alt="" class="relative xl:absolute top-0 left-0 select-none pointer-events-none z-10 w-full lg:w-1/2 xl:w-auto h-full mt-0 lg:mt-12 xl:mt-0">
@@ -146,7 +146,7 @@
     </section>
 
     <!-- Les Formules -->
-    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
+    <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative into_scroll" data-scroll="formules" id="formules">
         <x-app.container>
             <div class="title text-center sm:text-left py-6">
                 <x-app.h1 class="text-creme">Formules</x-app.h1>
@@ -159,7 +159,7 @@
                     <x-app.paragraph class="font-bold">Wod 1x/jour</x-app.paragraph>
                     <x-app.paragraph class="line-through">Accès illimité à la salle lors des horaires "FreeAccess"</x-app.paragraph>
                     <x-app.paragraph class="line-through">Suprise - Coming Soon</x-app.paragraph>
-                    <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph>
+                    <!-- <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph> -->
                 </div>
                 <div class="col-span-1 bg-burgundy border-[3px] md:border-[6px] border-creme text-creme px-6 py-5 md:px-10 md:py-6 lg:px-14 lg:py-8 border_radius_box">
                     <x-app.h3>Classic & free&nbsp;access</x-app.h3>
@@ -167,7 +167,7 @@
                     <x-app.paragraph>Wod 1x/jour</x-app.paragraph>
                     <x-app.paragraph class="font-bold">Accès illimité à la salle lors des horaires "FreeAccess"</x-app.paragraph>
                     <x-app.paragraph class="line-through">Suprise - Coming Soon</x-app.paragraph>
-                    <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph>
+                    <!-- <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph> -->
                 </div>
                 <div class="col-span-1 bg-burgundy border-[3px] md:border-[6px] border-creme text-creme px-6 py-5 md:px-10 md:py-6 lg:px-14 lg:py-8 border_radius_box">
                     <x-app.h3>Pack surprise</x-app.h3>
@@ -175,7 +175,7 @@
                     <x-app.paragraph>Wod 1x/jour</x-app.paragraph>
                     <x-app.paragraph>Accès illimité à la salle lors des horaires "FreeAccess"</x-app.paragraph>
                     <x-app.paragraph class="font-bold">Suprise - Coming Soon</x-app.paragraph>
-                    <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph>
+                    <!-- <x-app.paragraph class="underline">En savoir plus ?</x-app.paragraph> -->
                 </div>
             </div>
         </x-app.container>

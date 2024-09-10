@@ -11,14 +11,22 @@
         </a>
 
         <div class="hidden sm:flex sm:flex-wrap">
-            <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link active">CrossFit</a>
-            <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Histoire</a>
-            <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Lieu</a>
-            <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Formules</a>
-            <a href="{{ route('gallery') }}" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Photos</a>
-            <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Contact</a>
+            @if(Route::is('gallery'))
+                <a href="{{ route('home') }}#crossfit" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">CrossFit</a>
+                <a href="{{ route('home') }}#vision" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Histoire</a>
+                <a href="{{ route('home') }}#lieu" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Lieu</a>
+                <a href="{{ route('home') }}#formules" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Formules</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link active">Photos</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="contact">Contact</a>
+            @else
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="crossfit">CrossFit</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="vision">Histoire</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="lieu">Lieu</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="formules">Formules</a>
+                <a href="{{ route('gallery') }}" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Photos</a>
+                <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link scroller" data-scroll="contact">Contact</a>
+            @endif
         </div>
-        
     </x-app.container>
     
     <div class="shadow_nav h-36 lg:h-48 opacity-30" style="background-image:url('{{ Storage::url('images/menu_shadow.png') }}');"></div>
@@ -36,5 +44,4 @@
             </x-dropdown-link>
         </form>
     @endif
-    
 </header>
