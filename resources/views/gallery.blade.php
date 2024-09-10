@@ -21,19 +21,29 @@
     <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
         <x-app.container>
             <div class="grid grid-cols-4 gap-7" id="gallery">
-                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="spotlight col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="spotlight col-span-1" data-control="page,fullscreen,close,next,prev,infinite"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
             </div>
         </x-app.container>
     </section>
 
     @vite(['resources/js/main.js'])
+
+    <script>
+        Spotlight.init();
+        
+        var button = Spotlight.addControl("my-control", function(event){
+            // handle click event
+            alert('Show modal');
+            Spotlight.download();
+        });
+    </script>
 </x-app-layout>
