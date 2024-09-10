@@ -38,12 +38,12 @@
     @vite(['resources/js/main.js'])
 
     <script type="module">
-        import PhotoSwipeLightbox from 'http://[::1]:5173//resources/js/photoswipe-lightbox.esm.min.js';
+        import PhotoSwipeLightbox from 'http://[::1]:5174//resources/js/photoswipe-lightbox.esm.min.js';
 
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#gallery',
             children: 'a',
-            pswpModule: () => import('http://[::1]:5173/resources/js/photoswipe.esm.min.js')
+            pswpModule: () => import('http://[::1]:5174//resources/js/photoswipe.esm.min.js')
         });
 
         lightbox.init();
