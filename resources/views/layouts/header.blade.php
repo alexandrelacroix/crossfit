@@ -1,7 +1,7 @@
 <header class="absolute t-0 left-0 w-full z-50">
 
     <x-app.container class="nav flex justify-center sm:justify-between items-center pt-4 md:pt-6 lg:pt-10 relative">
-        <a href="/" class="flex">
+        <a href="{{ route('home') }}" class="flex">
             <img src="{{ Storage::url('images/logo.svg') }}" alt="" class="w-11 md:w-12 lg:w-16 xl:w-20 mr-0 lg:mr-3">
             <div class="flex sm:hidden md:flex mx-4 md:mx-5 lg:mx-6 items-center">
                 <img src="{{ Storage::url('images/heritage.svg') }}" alt="" class="w-36 lg:w-44">
@@ -15,7 +15,7 @@
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Histoire</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Lieu</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Formules</a>
-            <a href="/photos" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Photos</a>
+            <a href="{{ route('gallery') }}" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Photos</a>
             <a href="#" class="text-base text-white px-4 py-2 lg:px-5 lg:py-3 xl:px-6 xl:py-4 nav_link">Contact</a>
         </div>
         

@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/photos', function () {
     return view('gallery');
-});
+})->name('gallery');
 
 Route::get('/edit', function () {
     return view('edit');
