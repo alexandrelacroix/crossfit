@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="bg_img w-full h-screen lg:h-[120vh] opacity-90 blur-[1px] select-none pointer-events-none" style="background-image:url('{{ Storage::url('images/header.jpg') }}');"></div>
+    <div class="bg_img w-full h-screen lg:h-[120vh] opacity-90 blur-[1px] select-none pointer-events-none" style="background-image:url('{{ Storage::url('images/inauguration/inauguration.jpg') }}');"></div>
 
     <!-- Homge -->
     <section class="min-h-screen mb-6 lg:mb-12 grid content-center py-6 relative">
@@ -21,16 +21,16 @@
     <section class="min-h-screen my-6 lg:my-12 grid content-center py-6 relative">
         <x-app.container>
             <div class="grid grid-cols-4 gap-7" id="gallery">
-                <a href="{{ Storage::url('images/header.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header_2.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header_2.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header_2.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header_2.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
-                <a href="{{ Storage::url('images/header_2.jpg') }}" class="col-span-1 "><img src="{{ Storage::url('images/header.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/1.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/1.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/2.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/2.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/3.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/3.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/4.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/4.jpg') }}" alt="" class="select-none pointer-events-none"></a>
+                <a href="{{ Storage::url('images/inauguration/5.jpg') }}" class="col-span-1" data-pswp-width="1366" data-pswp-height="768"><img src="{{ Storage::url('images/inauguration/5.jpg') }}" alt="" class="select-none pointer-events-none"></a>
             </div>
         </x-app.container>
     </section>
@@ -38,15 +38,14 @@
     @vite(['resources/js/main.js'])
 
     <script type="module">
-        import PhotoSwipeLightbox from 'http://[::1]:5173//resources/js/photoswipe-lightbox.esm.js';
+        import PhotoSwipeLightbox from 'http://[::1]:5173//resources/js/photoswipe-lightbox.esm.min.js';
 
         const lightbox = new PhotoSwipeLightbox({
-        gallery: '#gallery',
-
-        children: 'a',
-
-        pswpModule: () => import('http://[::1]:5173/resources/js/photoswipe.esm.js')
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('http://[::1]:5173/resources/js/photoswipe.esm.min.js')
         });
+
         lightbox.init();
     </script>
 </x-app-layout>

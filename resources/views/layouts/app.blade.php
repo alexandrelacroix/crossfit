@@ -25,7 +25,7 @@
 
         <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        @vite(["resources/css/app.css", "resources/css/photoswipe.css", "resources/sass/app.sass", "resources/js/app.js",  "resources/js/photoswipe-lightbox.esm.js",  "resources/js/photoswipe.esm.js", "resources/js/main.js"])
+        @vite(["resources/css/app.css", "resources/css/photoswipe.css", "resources/sass/app.sass", "resources/js/app.js",  "resources/js/photoswipe-lightbox.esm.min.js",  "resources/js/photoswipe.esm.min.js", "resources/js/main.js"])
     </head>
     
     <body class="font-sans antialiased relative">
