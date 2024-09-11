@@ -1,8 +1,9 @@
 <x-app-layout>
+    
     <div class="bg_img w-full h-screen lg:h-[120vh] hidden md:block opacity-90 blur-[1px] select-none pointer-events-none" style="background-image:url('{{ Storage::url('images/header.jpg') }}');"></div>
     <div class="bg_img w-full h-screen lg:h-[120vh] block md:hidden opacity-90 blur-[1px] select-none pointer-events-none" style="background-image:url('{{ Storage::url('images/header_2.jpg') }}');"></div>
 
-    <!-- Homge -->
+    <!-- Home -->
     <section class="min-h-screen mb-6 lg:mb-12 grid content-center py-6 relative">
         <img src="{{ Storage::url('images/header_shadow.png') }}" class="shadow_bg select-none pointer-events-none hidden md:block">
 

@@ -21,28 +21,19 @@ export default {
             colors: {
                 'burgundy': {
                     DEFAULT: '#5f2e41',
-                    lite: '#fff',
-                    dark: '#fff',
+                    dark: '#4a1c2e',
                 },
                 'blue': {
                     DEFAULT: '#73e9d9',
-                    lite: '#fff',
-                    dark: '#fff',
                 },
                 'pink': {
                     DEFAULT: '#f168a2',
-                    lite: '#fff',
-                    dark: '#fff',
                 },
                 'purple': {
                     DEFAULT: '#703480',
-                    lite: '#fff',
-                    dark: '#fff',
                 },
                 'creme': {
                     DEFAULT: '#f8e5d4',
-                    lite: '#fff',
-                    dark: '#fff',
                 },
             },
             boxShadow: {

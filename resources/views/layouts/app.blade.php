@@ -29,8 +29,36 @@
         @vite(["resources/css/app.css", "resources/sass/app.sass", "resources/js/app.js", "resources/js/main.js"])
     </head>
     
-    <body class="font-sans antialiased relative">
+    <body class="font-sans antialiased relative text-burgundy-dark">
         <div class="w-screen h-screen fixed top-0 left-0 bg-burgundy fade_out"></div>
+
+        <x-app.modal data-modal="newsletter">
+            <form action="" class="">
+                <x-app.h2 class="mb-3 text-burgundy">Reste informé !</x-app.h2>
+                <x-app.paragraph class="!mt-0">Inscrit toi à la neswletter pour rester informé de nos actualités, évènement et promotion.</x-app.paragraph> 
+                <div class="">
+                    <x-app.label for="mail" >Ton e-mail</x-app.label>
+                    <x-app.input type="text" id="mail" name="mail" placeholder="..."></x-app.input>
+                </div>
+                <div class="flex items-center w-full mt-6">
+                    <x-app.button type="submit" class="!mx-0">Je m'inscris</x-app.button>
+                </div>
+            </form>
+        </x-app.modal>
+
+        <x-app.modal data-modal="download">
+            <form action="" class="">
+                <x-app.h2 class="mb-3 text-burgundy">Rejoins l'équipe !</x-app.h2>
+                <x-app.paragraph class="!mt-0">Inscrit toi à la neswletter pour recevoir la photo sans le logo</x-app.paragraph> 
+                <div class="">
+                    <x-app.label for="mail" >Ton e-mail</x-app.label>
+                    <x-app.input type="text" id="mail" name="mail" placeholder="..."></x-app.input>
+                </div>
+                <div class="flex items-center w-full mt-6">
+                    <x-app.button type="submit" class="!mx-0">Je m'inscris</x-app.button>
+                </div>
+            </form>
+        </x-app.modal>
 
         @include('layouts.header')
 
