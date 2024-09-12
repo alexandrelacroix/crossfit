@@ -27,6 +27,8 @@ window.addEventListener("scroll", function(event) {
     }
 }, false);
 
+
+/////////////////////
 // SPOTLIGHT GALLERY
 Spotlight.init();
 
@@ -35,6 +37,8 @@ var button = Spotlight.addControl("my-control", function(event){
     open_modal("download");
 });
 
+
+/////////////////////
 // MODAL
 function close_modal(modal){
     $(".modal[data-modal='"+modal+"']").removeClass("active");
@@ -58,6 +62,7 @@ $('.close_modal').on( "click", function(e) {
 });
 
 
+/////////////////////
 // COOKIES
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();

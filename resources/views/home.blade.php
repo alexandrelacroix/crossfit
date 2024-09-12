@@ -20,7 +20,7 @@
             </div>
             <div class="absolute bottom-3 left-0 text-center w-full opacity-80">
                 <x-app.talk>Quoi, Quand et Ou ?</x-app.talk><br/>
-                <img src="{{ Storage::url('images/scroll.svg') }}" alt="" class="inline-block mt-2 w-6 select-none pointer-events-none opacity-50 sm:opacity-100">
+                <img src="{{ Storage::url('images/scroll.gif') }}" alt="" class="inline-block mt-2 w-6 select-none pointer-events-none opacity-50 sm:opacity-100">
             </div>
         </x-app.container>
     </section>
